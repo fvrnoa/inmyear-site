@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>InMyEar</title>
+  <link rel="canonical" href="https://inmyear.app/" />
 
   <meta
     name="description"
@@ -59,6 +60,43 @@
       margin-bottom: 40px;
     }
 
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 14px 22px;
+      border: 1px solid #1f1f1f;
+      border-radius: 999px;
+      background: #1f1f1f;
+      color: #f7f4ef;
+      font-weight: 600;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #1f1f1f;
+    }
+
+    .button:hover,
+    .button:focus {
+      text-decoration: none;
+    }
+
+    .button:focus-visible {
+      outline: 3px solid #1f1f1f;
+      outline-offset: 4px;
+    }
+
     .tagline {
       font-size: 18px;
       font-weight: 600;
@@ -111,6 +149,11 @@
         font-size: 18px;
       }
 
+      .actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
       .footer-inner {
         align-items: flex-start;
         flex-direction: column;
@@ -127,10 +170,15 @@
       <h1>Understand the conversation.</h1>
 
       <p class="intro">
-        Paste a dating conversation or upload screenshots and get a clear,
+        Paste a conversation or upload screenshots and get a clear,
         grounded read on what is happening in the exchange — plus thoughtful
         ways to respond.
       </p>
+
+      <div class="actions">
+        <a class="button" href="https://inmyear.app/auth?mode=signup&amp;next=%2Fpaste&amp;utm_source=github_pages&amp;utm_medium=referral&amp;utm_campaign=developer_website">Try InMyEar on the web</a>
+        <a class="button secondary" href="https://apps.apple.com/us/app/inmyear/id6808726579">Download for iPhone</a>
+      </div>
 
       <p class="intro">
         InMyEar looks at the signals and patterns in the conversation without
